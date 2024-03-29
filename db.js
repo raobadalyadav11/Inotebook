@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoUrl = "mongodb+srv://raobadalyadav:Bkbadal33%40%40@ecommercemongodb.axnjntr.mongodb.net/";
+const mongoUrl = process.env.REACT_APP_MONGOURL;
 
 const connectToMongo = async () => {
   try {
