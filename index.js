@@ -5,7 +5,7 @@ const cors = require('cors'); // Import the cors middleware
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.REACT_APP_PORT;
 
 connectToMongo();
 app.use(express.json());
